@@ -39,13 +39,13 @@ print('A frase tem', frase6, 'itens')
 frase7 = fila.count('o')
 print('Existem {} "o" na frase "{}"'.format(frase7, fila))
 
-# mostra quantas vezes a letra "o" aparece da posição 0 até a 12 -> (13-1)
+# Mostra quantas vezes a letra "o" aparece da posição 0 até a 12 -> (13-1)
 frase8 = fila.count('o', 0 , 13)
-print('Mostre quantas letras "o" tem entre a posição 0 até 13'.format(frase8))
+print('Mostre quantas letras "o" tem entre a posição 0 até 13: {}'.format(frase8))
 
 # Mostra qual a posição que foi encontrada uma letra, caracter ou frase dentro de uma fila, lista ou frase
 frase9 = fila.find('deo')
-print(frase9)
+print('Mostra em qual posição (array) foi encontrada a palavra "deo" na frase: Posição {}'.format(frase9))
 # obs.: No exemplo frase9 = fila.find('Android') ele irá retornar o valor -1
 # isso significa que não foi encontrado na lista a palavra pesquisada
 frase9b = fila.find('Android')
@@ -122,7 +122,6 @@ print(fila.upper().count('O'))
 dividido = fila.split()
 print(dividido[2])
 print(dividido[2][3])
-
  
 
 

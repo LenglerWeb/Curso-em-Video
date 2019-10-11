@@ -5,6 +5,7 @@
 
 ano = int(input('Informe ano de nascimento: '))
 anoatual = 2019
+# atual = date.today().year  (Usado pelo professor!)
 idade = anoatual - ano
 
 print('Quem nasceu em {} tem/terá {} anos em {}.'.format(ano, idade, anoatual))

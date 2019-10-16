@@ -29,5 +29,8 @@ if sexo == 1:
         print('Você já deveria ter se alistado há {} anos.'.format(passou))
         print('Seu alistamento foi em {}.'.format(anoatual - passou))
 
-else:
+elif sexo == 2:
     print('\033[7;32;40mMulheres não precisam se alistar, obrigado pela consulta!\033[m ')
+
+else:
+    print('Opção INVÁLIDA!')

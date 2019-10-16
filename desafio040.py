@@ -8,14 +8,14 @@ n1 = float(input('Informe a primeira nota: '))
 n2 = float(input('Informe a segunda nota: '))
 n3 = float(input('Informe a terceira nota: '))
 
-m = (n1 + n2 + n3) / 3
+m = float(n1 + n2 + n3) / 3
 
 if m >= 7.0:
-    print('A sua média é {}'.format(m))
+    print('A sua média é {:.1f}'.format(m))
     print('O aluno está \033[7;32;40mAPROVADO!\033[m PARABÉNS.')
-elif m >= 5.0 and m <= 6.9:
-    print('A sua média é {}'.format(m))
+elif m >= 5.0 and m < 7.0:
+    print('A sua média é {:.1f}'.format(m))
     print('O aluno está em \033[7;33;40mRECUPERAÇÃO!\033[m Estude um pouco mais.')
 else:
-    print('A sua média é {}'.format(m))
+    print('A sua média é {:.1f}'.format(m))
     print('O aluno está \033[7;31;40mREPROVADO!\033[m Solicite a rematrícula para a mesma série.')

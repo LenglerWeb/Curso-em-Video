@@ -6,25 +6,28 @@
 print('Informe uma opção:')
 print('[ 1 ] - Masculino')
 print('[ 2 ] - Feminino')
-sexo = str(input('Qual sua opção: ')).strip().lower()
+
+sexo = int(input('Qual sua opção: '))
 if sexo == 1:
-ano = int(input('Informe ano de nascimento: '))
-anoatual = 2019
+    ano = int(input('Informe ano de nascimento: '))
+    anoatual = 2019
 # atual = date.today().year  (Usado pelo professor!)
-idade = anoatual - ano
+    idade = anoatual - ano
 
-print('Quem nasceu em {} tem/terá {} anos em {}.'.format(ano, idade, anoatual))
+    print('Quem nasceu em {} tem/terá {} anos em {}.'.format(ano, idade, anoatual))
 
-if idade < 18:
-    falta = 18 - idade
-    print('Ainda faltam {} anos para o alistamento.'.format(falta))
-    print('Seu alistamento será em {}.'.format(anoatual + falta))
-elif idade == 18:
-    print('Prepare-se para realizar o alistamento!')
-elif idade > 18:
-    passou = idade - 18
-    print('Você já deveria ter se alistado há {} anos.'.format(passou))
-    print('Seu alistamento foi em {}.'.format(anoatual - passou))
+    if idade < 18:
+        falta = 18 - idade
+        print('Ainda faltam {} anos para o alistamento.'.format(falta))
+        print('Seu alistamento será em {}.'.format(anoatual + falta))
+    
+    elif idade == 18:
+        print('Prepare-se para realizar o alistamento!')
+    
+    elif idade > 18:
+        passou = idade - 18
+        print('Você já deveria ter se alistado há {} anos.'.format(passou))
+        print('Seu alistamento foi em {}.'.format(anoatual - passou))
 
 else:
-    print('Mulheres não precisam se alistar, obrigado pela consulta! ')
+    print('\033[7;32;40mMulheres não precisam se alistar, obrigado pela consulta!\033[m ')

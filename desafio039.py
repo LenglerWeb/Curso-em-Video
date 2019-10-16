@@ -3,6 +3,11 @@
 # se é a hora exata de se alistar ou se já passou do tempo do alistamento. 
 # Seu programa também deverá mostrar o tempo que falta ou que passou do prazo.
 
+print('Informe uma opção:')
+print('[ 1 ] - Masculino')
+print('[ 2 ] - Feminino')
+sexo = str(input('Qual sua opção: ')).strip().lower()
+if sexo == 1:
 ano = int(input('Informe ano de nascimento: '))
 anoatual = 2019
 # atual = date.today().year  (Usado pelo professor!)
@@ -20,3 +25,6 @@ elif idade > 18:
     passou = idade - 18
     print('Você já deveria ter se alistado há {} anos.'.format(passou))
     print('Seu alistamento foi em {}.'.format(anoatual - passou))
+
+else:
+    print('Mulheres não precisam se alistar, obrigado pela consulta! ')

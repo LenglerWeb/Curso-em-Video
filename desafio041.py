@@ -6,9 +6,11 @@
 # - Até 25 anos: SÊNIOR
 # - Acima de 25 anos: MASTER
 
-ano = int(input('Qual o ano de nascimento do atleta: '))
+from datetime import date
 
-anoatual = 2019
+ano = int(input('Qual o ano de nascimento do atleta: '))
+anoatual = date.today().year
+#anoatual = 2019
 idade = anoatual - ano
 
 if idade > 25:

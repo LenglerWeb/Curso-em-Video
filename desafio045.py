@@ -2,7 +2,9 @@
 
 from random import randint
 from time import sleep
+
 itens = ('Pedra', 'Papel', 'Tesoura')
+
 print('-= JOKENPÔ =-')
 print('Escolha uma opção:')
 print('[ 0 ] PEDRA')

@@ -7,7 +7,7 @@ print('Quantas letras tem a frase digitada: {}'.format(cont))
 
 for c in range(cont, 0, -1):
    # print('{}'.format(p[0:c]))
-    p2 = p[c-1]
-    print(p2)  
+    #p2 = p[c-1]
+    #print(p2, end=' ')
     print('{}'.format(p[c-1]), end=' ')
 print('')    #print('{}'.format(p[cont:0:-1]))

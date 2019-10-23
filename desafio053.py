@@ -1,13 +1,24 @@
 # Exercício Python 053: Crie um programa que leia uma frase qualquer e diga se ela é um palíndromo, desconsiderando os espaços.
 
-p = str(input('Digite uma frase qualquer: ')).strip().upper()
+palavra = str(input('Digite uma frase qualquer: ')).strip().upper()
+palavra2 = palavra.split()
+junto = ''.join(palavra2)
+cont = len(junto)
+inverso = ''
 
-cont = len(p)
-print('Quantas letras tem a frase digitada: {}'.format(cont))
+print('-' * 25)
+print('Você digitou: {}'.format(palavra))
+# print('Lista de Palavras: {}'.format(palavra2))
+# print('Palavras todas junto: {}'.format(junto))
+# print('Quantas letras tem a frase digitada: {}'.format(cont))
+print('-' * 25)
 
-for c in range(cont, 0, -1):
-   # print('{}'.format(p[0:c]))
-    #p2 = p[c-1]
-    #print(p2, end=' ')
-    print('{}'.format(p[c-1]), end=' ')
-print('')    #print('{}'.format(p[cont:0:-1]))
+for c in range(cont - 1, -1, -1):
+    inverso += junto[c]
+
+print('{} -> {}'.format(junto, inverso))
+
+if junto == inverso:
+    print('A Frase/Palavra \033[1;32mFORMA\033[m um PALINDROMO')
+else:
+   print('A Frase/Palavra \033[1;31mNÃO FORMA\033[m um PALINDROMO')

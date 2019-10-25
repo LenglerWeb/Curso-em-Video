@@ -34,5 +34,3 @@ print('-' * 25)
 print('A média de idade do grupo é de {} anos.'.format(media))
 print('O homem mais velho tem {} anos e se chama {}.'.format(maior, name))
 print('Ao todo são {} mulher(es) com menos de 20 anos.'.format(mulheres))
-
-

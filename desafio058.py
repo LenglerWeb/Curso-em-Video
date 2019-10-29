@@ -7,12 +7,19 @@ from random import randint
 print('Sou seu computador...')
 npc = randint(0,10)
 print('Pensei em um número entre 0 à 10.')
-print('Será que você consegue adinhvinhar qual foi?')
-cont = 1
-n = int(input('Qual é o seu palpite? '))
+print('Será que você consegue adivinhar qual foi?')
+cont = 0
+n = 11
 
 while n != npc:
-    n = int(input('Qual é o seu palpite? '))
+    n = int(input('Qual o seu palpite? '))
     cont += 1
-print('PARABÉNS! Você acertou com {} tentativas.'.format(cont))
+    if n < npc:
+        print('Tente um número maior!')
+
+    elif n > npc:
+        print('Tente um número menor!')
+    
+        
+print('PARABÉNS! Você acertou com {} tentativa(s).'.format(cont))
 print('FIM')

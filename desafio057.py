@@ -22,7 +22,8 @@ while sair != 'S':
     
 
     sair = str(input('Deseja sair? [S/N]: ')).strip().upper()
-    while sair != 'S' and sair != 'N':
+    while sair not in 'SsNn':
+    #while sair != 'S' and sair != 'N':
         sair = str(input('ERRO! Digite somente [S/N]: ')).strip().upper()
         
       

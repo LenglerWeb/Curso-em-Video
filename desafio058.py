@@ -23,3 +23,21 @@ while n != npc:
         
 print('PARABÉNS! Você acertou com {} tentativa(s).'.format(cont))
 print('FIM')
+
+##############################################################
+# Solução do professor!
+##############################################################
+# palpite = 0
+# acertou = False
+# while not acertou:
+#    jogador = int(input('Qual o seu palpite? '))
+#    palpite += 1
+#    if jogador = npc:
+#        acertou = True
+#    else:
+#        if jogador < npc:
+#            print('Mais... Tente mais uma vez.')
+#        elif jogador > npc:
+#            print('Menos... Tente mais uma vez.')
+# print('Parabéns! Você acertou com {} tentativas.'.format(palpite))
+##############################################################

@@ -46,4 +46,8 @@ while not op == 5:
         n2 = int(input('Segundo número: '))
         print('=-' * 15)
         sleep(1)
+    else:
+        print('Opção Inválida, tente novamente.')
+        print('=-' * 15)
+        sleep(1)
 print('FIM')

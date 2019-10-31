@@ -27,11 +27,13 @@ while not op == 5:
         print('A soma de {} + {} = {}'.format(n1, n2, soma))
         print('=-' * 15)
         sleep(1)
+    
     elif op == 2:
         multiplicar = n1 * n2
         print('A multiplicação de {} * {} = {}'.format(n1, n2, multiplicar))
         print('=-' * 15)
         sleep(1)
+    
     elif op == 3:
         if n1 > n2:
             maior = n1
@@ -40,14 +42,19 @@ while not op == 5:
         print('O maior número foi o {}.'.format(maior))
         print('=-' * 15)
         sleep(1)
+    
     elif op == 4:
         print('Informe dois novos números.')
         n1 = int(input('Primeiro número: '))
         n2 = int(input('Segundo número: '))
         print('=-' * 15)
         sleep(1)
+    
+    elif op == 5:
+        print('Finalizando o programa...')
+
     else:
         print('Opção Inválida, tente novamente.')
         print('=-' * 15)
-        sleep(1)
+    sleep(1)
 print('FIM')

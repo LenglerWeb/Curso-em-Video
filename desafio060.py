@@ -27,7 +27,10 @@ f = 1
 print('Calculando {}! = '.format(n), end='')
 while c > 0:
     print('{}'.format(c), end='')
-    print(' x ' if c > 1 else ' = ', end='')
+    if c > 1:
+        print(' x ', end='')
+    else: 
+        print(' = ', end='')
     f *= c
     c -= 1
 print('{}'.format(f))
@@ -42,12 +45,19 @@ print('Calcular o FATORIAL de um número.')
 print('=-' * 17)
 n = int(input('Digite um número inteiro: '))
 c = n
-cont = 1
+f = 1
+
+print('{}! = '.format(n), end='')
 for c in range(1, c+1):
-    
-    print('')
-    f *= cont
-    print('{}'.format(f))
+    print('{}'.format(n), end='')
+    if c <= 1:
+        print(' = ', end='')
+    else:
+        print(' x ', end='')
+    n -= 1
+    f *= c
+
+print('{}'.format(f))
 
 
 

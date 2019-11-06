@@ -48,17 +48,13 @@ c = n
 f = 1
 
 print('{}! = '.format(n), end='')
-for c in range(1, c+1):
+for c in range(c, 0, -1):
     print('{}'.format(n), end='')
-    if c <= 1:
+    if c == 1:
         print(' = ', end='')
     else:
         print(' x ', end='')
     n -= 1
     f *= c
-
 print('{}'.format(f))
-
-
-
 print('\nFIM do Exemplo 3.')

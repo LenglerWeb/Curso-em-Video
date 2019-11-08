@@ -2,21 +2,37 @@
 # razão de uma PA, mostrando os 10 primeiros termos da progressão usando a 
 # estrutura while.
 
-print('=-' * 17)
-print('Calcular o FATORIAL de um número.')
-print('=-' * 17)
-n = int(input('Digite um número inteiro: '))
-c = n
-f = 1
+print('=' * 51)
+print(' 10 primeiros termos de uma Progressão Aritmética: ')
+print('=' * 51)
 
-print('{}! = '.format(n), end='')
-for c in range(c, 0, -1):
-    print('{}'.format(n), end='')
-    if c == 1:
-        print(' = ', end='')
+n = int(input('Digite o primeiro termo: '))
+r = int(input('Digite a Razão: '))
+pa = n + (11 - 1) * r
+c = n
+
+while c < pa:
+    print('{}'.format(c), end='')
+    if c == pa - r:
+        print('.')
     else:
-        print(' x ', end='')
-    n -= 1
-    f *= c
-print('{}'.format(f))
-print('\nFIM do Exemplo 3.')
+        print(end=' -> ')
+    c += r
+
+print('FIM')
+
+########################################
+#        Resolução do professor:       #
+########################################
+# print('=' * 51)
+# print(' 10 primeiros termos de uma Progressão Aritmética: ')
+# print('=' * 51)
+# n = int(input('Digite o primeiro termo: '))
+# razão = int(input('Digite a razão: '))
+# termo = n
+# cont = 1
+# while cont <=10:
+#   print('{} -> '.format(termo), end=''))
+#   termo += razão
+#   cont += 1
+# print('FIM')

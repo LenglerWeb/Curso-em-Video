@@ -17,16 +17,21 @@ total = 0
 
 while mais != 0:
     total = total + mais
+
     while cont <= total:
         print('{}'.format(pa), end='')
-        if cont == 10:
-            print('.')                
+
+        if cont == total:
+            print('. ', end='')                
         else:
             print(end=' -> ')
+
         pa += r
         cont += 1
 
-    print('PAUSA')
+    print('( PAUSA )')
+
     mais = int(input('Quantos termos mais você quer mostrar? '))
+    
 print('Progressão finalizada com {} termos mostrados.'.format(total))
 

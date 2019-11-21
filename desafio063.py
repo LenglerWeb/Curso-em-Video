@@ -7,14 +7,19 @@ print('Sequência de Fibonacci')
 print('-' * 23)
 
 n = int(input('Quantos termos você quer mostrar? '))
-termo = n
-cont = 1
-f = 0
-s = 0
-while cont <= termo:
-    print('{} -> '.format(s), end='')
-    f1 = 1
-    s = f + f1
-    
+
+cont = 3
+f1 = 0
+f2 = 1
+f3 = 0
+
+print('~' * 30)
+print('{} -> {} ->'.format(f1, f2), end='')
+
+while cont <= n:
+    f3 = f1 + f2
+    print(' {} -> '.format(f3), end='')
+    f1 = f2
+    f2 = f3
     cont += 1
 print('FIM')

@@ -6,6 +6,7 @@ print('=~=' * 10)
 
 n = int(input('Informe quantos termos deve mostrar: '))
 
+# cont inicia em 3 porque já foi mostrado o f1 e o f2!!
 cont = 3
 f1 = 0
 f2 = 1

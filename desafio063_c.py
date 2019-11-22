@@ -7,7 +7,7 @@ soma = 1
 
 while cont <= num:
 
-     print(f1, end='-')
+     print(f1, end=' -> ')
      cont += 1
      soma = f2 + f1
      f1 = f2

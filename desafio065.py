@@ -12,7 +12,7 @@ while resposta in 'Ss':
     cont += 1
     
     if cont == 1:
-        manior = menor = n
+        maior = menor = n
     else:
         if n > maior:
             maior = n

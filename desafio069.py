@@ -9,7 +9,7 @@ print("*=" * 11)
 print("  CADASTRE UM PESSOA")
 print("*=" * 11)
 
-conth = contm = contidade = contmaioridade = contmenoridade = 0
+conth = contm = contmaioridade = contmenoridade = 0
 while True:
     sexo = " "
     idade = int(input('Idade: '))

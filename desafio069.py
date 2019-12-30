@@ -33,4 +33,4 @@ while True:
     
 print(f'Quantas pessoas MAIORES de 18 anos: {contmaioridade} pessoa(s).')
 print(f"Quantos HOMENS foram cadastrados: {conth}. ")
-print(f'Quantas mulheres tem menos de 20 anos: {contm}')
+print(f'Quantas mulheres tem menos de 20 anos: {contm}.')

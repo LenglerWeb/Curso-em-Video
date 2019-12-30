@@ -39,6 +39,7 @@ while True:
         else:
             print('Você perdeu!')
             break
+        
     print('Vamos jogar nomevente!')
 print(f'Você venceu {cont} vezes seguidas.')
 

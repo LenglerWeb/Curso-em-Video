@@ -14,24 +14,21 @@ cont = total = menorpreco = maisquemil= 0
 produto = ' '
 while True:
     nome = str(input("Nome do Produto: "))
-    preco = float(input("Preço: "))
+    preco = float(input("Preço: R$"))
 
+    cont += 1
     total += preco
     
     if preco >= 1000:
         maisquemil += 1
         
-    if cont == 1:
+    if cont == 1 or preco < menorpreco:
         menorpreco = preco
         produto = nome
-    else:
-        if preco < menorpreco:
-            menorpreco = preco
-            produto = nome    
-
+    
     continuar = " "
     while continuar not in 'SN':
-        continuar = str(input("Deseja continuar? [S/N]")).strip().upper()[0]
+        continuar = str(input("Continuar? [S/N]")).strip().upper()[0]
     if continuar == 'N':
         break
 

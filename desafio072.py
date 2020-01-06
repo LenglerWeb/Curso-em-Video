@@ -8,10 +8,7 @@ extenso = ('Zero', 'Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oi
 while True:
     numero = int(input("Digite um número entre 0 e 20: "))
     if 0 <= numero <= 20:
-        break
-    
-    for c in range(0, len(extenso)):
-        print(f"Você digitou o número {extenso[c]}")
+        print(f"Você digitou o número {extenso[numero]}")
 
         
 

@@ -10,6 +10,11 @@ while True:
     if 0 <= numero <= 20:
         print(f"Você digitou o número {extenso[numero]}")
 
-        
+        continuar = " "
+        while continuar not in 'SN':
+            continuar = str(input("Continuar? [S/N]")).strip().upper()[0]
+        if continuar == 'N':
+            print(">>> PROGRAMA ENCERRADO! <<<")
+            break
 
 

@@ -7,8 +7,9 @@ from random import randint
 
 print('Foi sorteado os números: ', end='')
 random = (randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10), randint(1, 10))
-
-#print('')
-print(random)
+for n in random:
+    print(f'{n} ', end='')
+print('')
+#print(random)
 print(f'O MAIOR número sorteado foi: {max(random)}')
 print(f'O MENOR número sorteado foi: {min(random)}')
